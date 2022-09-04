@@ -1,46 +1,31 @@
-document.getElementById("submit_details").addEventListener("submit", myFunction);
+const initializeDom=()=>{
+document.getElementById('search_books').addEventListener('submit', searchBook)
+function searchBook(e){
+  e.preventDefault()
+  
+  let input=document.getElementById('books')
+  console.log(input.value)
 
-function myFunction(e){
-   e.preventDefault()
- alert("submitted")
+  fetch(`http://localhost:3000/books/${input.value}`)
+  .then(response=>response.json())
+  .then(books=>printOurbooks(books))
+
+function printOurbooks(ourBooks){
+
+  let p=document.getElementById('para')
+  p.innerHTML=`${ourBooks.name} <br> ${ourBooks.Serial_No} <br> ${ourBooks.price}`
+
+}
 }
 
-fetch('http://localhost:3000/Book1')
-.then(data => {
-  return db.json()
-})
-.then(post => {
-  console.log (post.name)
-})
 
-fetch('http://localhost:3000/book2')
-.then(data => {
-  return db.json()
-})
-.then(post => {
-  console.log (post.name)
-})
 
-fetch('http://localhost:3000/book3')
-.then(data => {
-  return db.json()
-})
-.then(post => {
-  console.log (post.name)
-})
 
-fetch(' http://localhost:3000/book4')
-.then(data => {
-  return db.json()
-})
-.then(post => {
-  console.log (post.name)
-})
 
-fetch(' http://localhost:3000/book5 ')
-.then(data => {
-  return db.json()
-})
-.then(post => {
-  console.log (post.name)
-})
+
+
+
+
+
+}
+document.addEventListener('DOMContentLoaded', initializeDom)
