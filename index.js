@@ -36,3 +36,11 @@ fetch(' http://localhost:3000/book4')
 .then(post => {
   console.log (post.name)
 })
+
+fetch(' http://localhost:3000/book5 ')
+.then(data => {
+  return db.json()
+})
+.then(post => {
+  console.log (post.name)
+})
