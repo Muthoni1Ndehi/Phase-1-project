@@ -1,38 +1,39 @@
 {
-    "Book1": [
+    "books": [
         {
             "name": "Being a Better Version Of Yourself",
-            "serial Number": "8776",
-            "price": "1916.87"
-        }
-    ],
-    "book2" : [
+            "Serial_No": "8776",
+            "price": "1916.87",
+            "id":1
+   
+        },
         {
             "name": "Milla and honey",
-            "serial Number " : "1141",
-            "price" : "700"
+            "Serial_No " : "1141",
+            "price" : "700",
+            "id":2
 
-        }
-    ],
-    "book3": [
+        },
+   
         {
             "name": "Harry Porter",
-            "serail Number" : "2334",
-            "price":"2170"  
-        }
-    ],
-    "book4" :[
+            "Serial_No" : "2334",
+            "price":"2170" ,
+            "id":3
+        },
+   
         {
             "name": "Atomic Habbits",
-            "serail number" : "1411",
-            "price" : "1488"
-        }
-    ],
-    "book5" :[
+            "Serial_No" : "1411",
+            "price" : "1488",
+            "id":4
+        },
+   
         {
             "name" : "Leraning Mathematics",
-            "serial number" : "3434",
-            "price" :  "1000"
+            "Serial_No" : "3434",
+            "price" :  "1000",
+            "id":5
         }
     ]
 }
