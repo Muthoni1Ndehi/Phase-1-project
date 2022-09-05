@@ -4,7 +4,7 @@ function searchBook(e){
   e.preventDefault()
   
   let input=document.getElementById('books')
-  console.log(input.value)
+  
 
   fetch(`http://localhost:3000/books/${input.value}`)
   .then(response=>response.json())
